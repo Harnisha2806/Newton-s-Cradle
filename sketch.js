@@ -71,6 +71,23 @@ function keyPressed(){
 		Matter.Body.applyForce(bob5.body , bob5.body.position ,{ x:10, y:-10 });
 	}
 
+	if(keyDown("1")){
+		Matter.Body.applyForce(bob1.body , bob1.body.position ,{ x:-10, y:-10 });
+		Matter.Body.applyForce(bob2.body , bob2.body.position ,{ x:-10, y:-10 });
+	}
+
+	if(keyDown("2")){
+		Matter.Body.applyForce(bob5.body , bob5.body.position ,{ x:10, y:-10 });
+		Matter.Body.applyForce(bob4.body , bob4.body.position ,{ x:10, y:-10 });
+	}
+
+	if(keyDown("space")){
+		Matter.Body.applyForce(bob1.body , bob1.body.position ,{ x:-10, y:-10 });
+		Matter.Body.applyForce(bob2.body , bob2.body.position ,{ x:-10, y:-10 });
+		Matter.Body.applyForce(bob5.body , bob5.body.position ,{ x:10, y:-10 });
+		Matter.Body.applyForce(bob4.body , bob4.body.position ,{ x:10, y:-10 });
+	}
+
 
 }
 
